@@ -1,4 +1,4 @@
-ther: lowercase.o changecase.o
+lowercase: lowercase.o changecase.o
 	cc  -o lowercase lowercase.o changecase.o
 
 changecase.o: changecase.c
