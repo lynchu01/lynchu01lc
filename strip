@@ -1,0 +1,14 @@
+#!/bin/bash
+
+file=$1
+
+if [ -a $file ]; then
+    lowercase < $1 > $2
+
+else
+    echo "********************************************"
+    echo "**        This file is not correct        **"
+    echo "**    Try: strip (your file) (newfile)    **"
+    echo "********************************************"
+
+fi
