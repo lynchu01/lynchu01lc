@@ -2,10 +2,11 @@
 
 file=$1
 
-if [ -a $file ]; then
+if [ $# -eq 2 ] && [ -a $file ]; then
     lowercase < $1 > $2
 
 else
+
     echo "********************************************"
     echo "**        This file is not correct        **"
     echo "**    Try: strip (your file) (newfile)    **"
